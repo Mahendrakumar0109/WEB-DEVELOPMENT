@@ -1,0 +1,62 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
+.about-image img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 100px;
+    float: left;
+    margin: 15px;
+}
+
+/* Animation and transform on hover */
+.about-section:hover .about-content {
+    transform: translateX(10px); /* Move 10px to the right on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
