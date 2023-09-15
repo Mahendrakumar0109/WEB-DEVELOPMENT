@@ -1,0 +1,189 @@
+
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #ea0808;
+            color: #fff;
+            padding: 20px;
+            
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+       
+
+
+/* Sidenav styles */
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background-color: #f4f3f3;
+    color: #0b0b0b;
+    transition: left 0.3s ease;
+}
+
+/* Open button styles */
+.open-button {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Close button styles */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+
+        /* Content styles */
+        .content {
+            margin-left:250px;
+            padding: 30px;
+            height: 100vh;
+        }
+
+        /* Carousel styles */
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic carousel styles */
+.carousel-container {
+    width: 100%;
+   margin-left: 50px;
+ 
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    animation-name: slide;
+}
+
+.carousel-slide img {
+    width: 20%;
+    height: auto;
+}
+
+/* Animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Animate the slides */
+.carousel-slide:first-child {
+    display: block;
+    animation: slide 3s linear infinite;
+}
+
+/* If you have more slides, add styles for subsequent slides */
+.carousel-slide:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.carousel-slide:nth-child(3) {
+    animation-delay: 6s;
+}
+
+
+        /* Card styles */
+.card {
+    background-image: linear-gradient(to bottom right, red, yellow);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    color: #fff;
+   
+}
+
+        /* Footer styles */
+        .footer {
+            background-color: #421616;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+           margin-top: 20px;
+            bottom: 0;
+            width: 100%;
+            
+        }
+
+       
+
+
+        /* When the checkbox is checked, show the sidenav */
+#sidenav-toggle:checked + .sidenav {
+    left: 0;
+}
+
+/* Hide the open button when the sidenav is open */
+#sidenav-toggle:checked + .sidenav + .open-button {
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+    li{
+        background-color:rgb(182, 170, 170);
+        padding: 10px;
+        margin: 5px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    li:hover{
+        background-color: #454444;
+        color: #f0f0f0;
+        transform:translate3d(5px, 5px, 5px);
+    }
+
+    strong{
+        background-color: #fbf7f7;
+        color: #4f4d4d;
+        margin-right: 100px;
+        padding: 5px 10px;
+    }
